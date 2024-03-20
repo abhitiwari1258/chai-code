@@ -34,3 +34,29 @@ console.log(typeof anotId);//symbol
 console.log(typeof heros); //obj
 console.log(typeof myObj);//obj
 console.log(typeof myFunc);// function
+
+/*********************************************** */
+/* Stack (primitive) (copy pass) and Heap (Non_primitive) (refferennce pass)
+*/
+
+let myUtube = "abhishek";
+
+let anotherName = myUtube;
+anotherName = "sachin";
+
+console.log(myUtube)
+console.log(anotherName)
+
+
+let userOne = {
+    email: "userId",
+    upi: "12345"
+}
+
+let userTwo = userOne
+
+
+userTwo.email = "abishek"
+
+console.log(userOne)
+console.log(userTwo);
